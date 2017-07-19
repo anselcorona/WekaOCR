@@ -1,7 +1,6 @@
 import weka.core.FastVector;
 
 import javax.imageio.ImageIO;
-import javax.swing.*;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -11,13 +10,10 @@ import java.util.Arrays;
 import weka.core.*;
 import weka.core.converters.ArffLoader;
 
-public class MainWindow extends JFrame {
+public class Entrenador {
     private Instances datos = null;
-    private static String training =  "/Users/anselcorona/desktop/wekatrain2/test.arff";
-    public MainWindow ()
-    {
-        this.setVisible(true);
-        this.setSize(200,200);
+    private static String training =  "training/test.arff";
+    public Entrenador(){
         entrenamiento();
     }
 
@@ -28,12 +24,11 @@ public class MainWindow extends JFrame {
         Graphics2D g2d = dimg.createGraphics();
         g2d.drawImage(tmp, 0, 0, null);
         g2d.dispose();
-
         return dimg;
     }
 
     public void entrenamiento(){
-        File dir = new File("/Users/anselcorona/desktop/wekatrain2");
+        File dir = new File("/Users/anselcorona/desktop/wekatrain");
         File[] directoryListing = dir.listFiles();
         if (directoryListing != null) {
             int i=0, indice=0;
@@ -184,10 +179,10 @@ public class MainWindow extends JFrame {
 
     public String getClass(File f){
         //TODO: Modificar para que coja numeros, un algoritmo diferente de captar la clase es necesario también.
-        String clase = null;
+        String clase;
         System.out.println(f.getName());
 
-        if(f.getName().substring(0, 3).equals("NN") )
+        if(f.getName().substring(0, 3 ).equals("NN") )
         {
             clase = "NN";
             System.out.println(clase);
