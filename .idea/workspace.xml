@@ -2,40 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9bba85a-baec-4ea1-9952-023561f0618e" name="Default" comment="*Uff, que no ha cambiado estimado Bryan&#10;*Pues te cuento que a partir de esta version dejamos de trabajar con paths especificos, lease, ya no hay que modificar el codigo para poder ejecutar.&#10;*esta nueva version del proyecto coge fotografías desde el mismo proyecto, las de entrenamiento en el folder entrenamiento y las de prueba en el folder pruebas.&#10;*modifique algo ahi en una funcion, creo que eventualmente habra que modificar todo, le puse lo del path para que este bien bla bla bla.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/entrenamiento/img-718121727-0001.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/2-1.png" afterPath="$PROJECT_DIR$/entrenamiento/2-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/2-2.png" afterPath="$PROJECT_DIR$/entrenamiento/2-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/2-3.png" afterPath="$PROJECT_DIR$/entrenamiento/2-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/2-4.png" afterPath="$PROJECT_DIR$/entrenamiento/2-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/3-1.png" afterPath="$PROJECT_DIR$/entrenamiento/3-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/3-2.png" afterPath="$PROJECT_DIR$/entrenamiento/3-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/3-3.png" afterPath="$PROJECT_DIR$/entrenamiento/3-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/3-4.png" afterPath="$PROJECT_DIR$/entrenamiento/3-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/4-1.png" afterPath="$PROJECT_DIR$/entrenamiento/4-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/4-2.png" afterPath="$PROJECT_DIR$/entrenamiento/4-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/4-3.png" afterPath="$PROJECT_DIR$/entrenamiento/4-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/4-4.png" afterPath="$PROJECT_DIR$/entrenamiento/4-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/5-1.png" afterPath="$PROJECT_DIR$/entrenamiento/5-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/5-2.png" afterPath="$PROJECT_DIR$/entrenamiento/5-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/5-3.png" afterPath="$PROJECT_DIR$/entrenamiento/5-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/5-4.png" afterPath="$PROJECT_DIR$/entrenamiento/5-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/6-1.png" afterPath="$PROJECT_DIR$/entrenamiento/6-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/6-2.png" afterPath="$PROJECT_DIR$/entrenamiento/6-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/6-3.png" afterPath="$PROJECT_DIR$/entrenamiento/6-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/6-4.png" afterPath="$PROJECT_DIR$/entrenamiento/6-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/7-1.png" afterPath="$PROJECT_DIR$/entrenamiento/7-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/7-2.png" afterPath="$PROJECT_DIR$/entrenamiento/7-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/7-3.png" afterPath="$PROJECT_DIR$/entrenamiento/7-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/7-4.png" afterPath="$PROJECT_DIR$/entrenamiento/7-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/8-1.png" afterPath="$PROJECT_DIR$/entrenamiento/8-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/8-2.png" afterPath="$PROJECT_DIR$/entrenamiento/8-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/8-3.png" afterPath="$PROJECT_DIR$/entrenamiento/8-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/8-4.png" afterPath="$PROJECT_DIR$/entrenamiento/8-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/9-1.png" afterPath="$PROJECT_DIR$/entrenamiento/9-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/9-2.png" afterPath="$PROJECT_DIR$/entrenamiento/9-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/9-3.png" afterPath="$PROJECT_DIR$/entrenamiento/9-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrenamiento/9-4.png" afterPath="$PROJECT_DIR$/entrenamiento/9-4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/Entrenador.class" afterPath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/Entrenador.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebas/8-1.png" afterPath="$PROJECT_DIR$/pruebas/8-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebas/Amayus-1.png" afterPath="$PROJECT_DIR$/pruebas/Amayus-1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entrenador.java" afterPath="$PROJECT_DIR$/src/Entrenador.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing/test.arff" afterPath="$PROJECT_DIR$/testing/test.arff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/train.arff" afterPath="$PROJECT_DIR$/training/train.arff" />
     </list>
     <ignored path="ProyectoFinalMineria.iws" />
@@ -66,8 +38,6 @@
               <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3215#3274#0" expanded="true" />
-                <element signature="e#4446#4505#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,6 +110,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -193,8 +165,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -671,7 +641,9 @@
       <workItem from="1500474575458" duration="4072000" />
       <workItem from="1500499128294" duration="5855000" />
       <workItem from="1500523829269" duration="55000" />
-      <workItem from="1500524777109" duration="480000" />
+      <workItem from="1500524777109" duration="623000" />
+      <workItem from="1500526785593" duration="412000" />
+      <workItem from="1500528391263" duration="184000" />
     </task>
     <task id="LOCAL-00001" summary="*Uff, que no ha cambiado estimado Bryan&#10;*Pues te cuento que a partir de esta version dejamos de trabajar con paths especificos, lease, ya no hay que modificar el codigo para poder ejecutar.&#10;*esta nueva version del proyecto coge fotografías desde el mismo proyecto, las de entrenamiento en el folder entrenamiento y las de prueba en el folder pruebas.&#10;*modifique algo ahi en una funcion, creo que eventualmente habra que modificar todo, le puse lo del path para que este bien bla bla bla.">
       <created>1500514177234</created>
@@ -684,7 +656,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33189000" />
+    <option name="totallyTimeSpent" value="33928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -692,13 +664,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32386363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32152975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3181818" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9474432" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -747,8 +719,16 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3215#3274#0" expanded="true" />
-            <element signature="e#4446#4505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entrenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -759,8 +739,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3215#3274#0" expanded="true" />
-            <element signature="e#4446#4505#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -771,8 +749,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3215#3274#0" expanded="true" />
-            <element signature="e#4446#4505#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -783,8 +759,16 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3215#3274#0" expanded="true" />
-            <element signature="e#4446#4505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entrenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,8 +869,6 @@
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3215#3274#0" expanded="true" />
-            <element signature="e#4446#4505#0" expanded="true" />
           </folding>
         </state>
       </provider>
