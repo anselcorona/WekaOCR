@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9bba85a-baec-4ea1-9952-023561f0618e" name="Default" comment="*Uff, que no ha cambiado estimado Bryan&#10;*Pues te cuento que a partir de esta version dejamos de trabajar con paths especificos, lease, ya no hay que modificar el codigo para poder ejecutar.&#10;*esta nueva version del proyecto coge fotografías desde el mismo proyecto, las de entrenamiento en el folder entrenamiento y las de prueba en el folder pruebas.&#10;*modifique algo ahi en una funcion, creo que eventualmente habra que modificar todo, le puse lo del path para que este bien bla bla bla.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/Screen Shot 2017-07-18 at 12.39.51 PM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/Screen Shot 2017-07-18 at 12.40.10 PM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/WhatsApp Image 2017-07-18 at 1.07.06 PM.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/WhatsApp Image 2017-07-18 at 12.28.56 PM.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/WhatsApp Image 2017-07-18 at 12.29.38 PM.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/WhatsApp Image 2017-07-18 at 12.40.08 PM.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/WhatsApp Image 2017-07-18 at 12.47.48 PM.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/WhatsApp Image 2017-07-18 at 12.53.17 PM.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/letras para entrenar/img-718121727-0001.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/MainWindow.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/training/test.arff" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/Main.class" afterPath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entrenador.java" afterPath="$PROJECT_DIR$/src/Entrenador.java" />
-    </list>
+    <list default="true" id="b9bba85a-baec-4ea1-9952-023561f0618e" name="Default" comment="" />
     <ignored path="ProyectoFinalMineria.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -646,12 +631,20 @@
       <workItem from="1500329698019" duration="5780000" />
       <workItem from="1500409520584" duration="10987000" />
       <workItem from="1500474575458" duration="4072000" />
-      <workItem from="1500499128294" duration="5520000" />
+      <workItem from="1500499128294" duration="5596000" />
     </task>
+    <task id="LOCAL-00001" summary="*Uff, que no ha cambiado estimado Bryan&#10;*Pues te cuento que a partir de esta version dejamos de trabajar con paths especificos, lease, ya no hay que modificar el codigo para poder ejecutar.&#10;*esta nueva version del proyecto coge fotografías desde el mismo proyecto, las de entrenamiento en el folder entrenamiento y las de prueba en el folder pruebas.&#10;*modifique algo ahi en una funcion, creo que eventualmente habra que modificar todo, le puse lo del path para que este bien bla bla bla.">
+      <created>1500514177234</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1500514177234</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32319000" />
+    <option name="totallyTimeSpent" value="32395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -659,12 +652,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3252841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3181818" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
