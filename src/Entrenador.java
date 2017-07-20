@@ -11,13 +11,16 @@ import weka.core.*;
 import weka.core.converters.ArffLoader;
 
 public class Entrenador {
-    private Instances datos = null;
-    private static String training =  "training/test.arff";
+    private Instances datostraining = null;
+    private Instances datostesting = null;
+    private static String training =  "training/train.arff";
+    private static String testing = "testing/test.arff";
     public Entrenador(){
         entrenamiento();
+        pruebas();
     }
 
-    public static BufferedImage resize(BufferedImage img, int newW, int newH) {
+    private static BufferedImage resize(BufferedImage img, int newW, int newH) {
         Image tmp = img.getScaledInstance(newW, newH, Image.SCALE_SMOOTH);
         BufferedImage dimg = new BufferedImage(newW, newH, BufferedImage.TYPE_INT_ARGB);
 
@@ -27,8 +30,8 @@ public class Entrenador {
         return dimg;
     }
 
-    public void entrenamiento(){
-        File dir = new File("/Users/anselcorona/desktop/wekatrain");
+    private void entrenamiento(){
+        File dir = new File("entrenamiento");
         File[] directoryListing = dir.listFiles();
         if (directoryListing != null) {
             int i=0, indice=0;
@@ -36,14 +39,14 @@ public class Entrenador {
                 if(i>0) {
                     System.out.println("Imagen del indice "+ indice + "\n");
                     if(indice ==0){
-                        generarArchivoWeka(getBinaryFromImage(child));
-                        datos = cargarArchivoWeka(training, directoryListing.length);
+                        generarArchivoWeka(getBinaryFromImage(child), training);
+                        datostraining = cargarArchivoWeka(training, directoryListing.length);
                     }
                     try{
                         if(ImageIO.read(child)!=null){
                             indice++;
                             System.out.println("class "+getClass(child));
-                            datos.add(addInstance(getBinaryFromImage(child), getClass(child), datos));
+                            datostraining.add(addInstance(getBinaryFromImage(child), getClass(child), datostraining));
                         }
                     }catch (Exception e){
                         e.printStackTrace();
@@ -52,14 +55,42 @@ public class Entrenador {
                 }
                 i++;
             }
-            saveArchivoWeka(datos);
+            saveArchivoWeka(datostraining, training);
+        }
+    }
+    private void pruebas(){
+        File dir = new File("pruebas");
+        File[] directoryListing = dir.listFiles();
+        if (directoryListing != null) {
+            int i=0, indice=0;
+            for (File child : directoryListing) {
+                if(i>0) {
+                    System.out.println("Imagen del indice "+ indice + "\n");
+                    if(indice ==0){
+                        generarArchivoWeka(getBinaryFromImage(child), testing);
+                        datostesting = cargarArchivoWeka(testing, directoryListing.length);
+                    }
+                    try{
+                        if(ImageIO.read(child)!=null){
+                            indice++;
+                            System.out.println("class "+getClass(child));
+                            datostesting.add(addInstance(getBinaryFromImage(child), getClass(child), datostesting));
+                        }
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+
+                }
+                i++;
+            }
+            saveArchivoWeka(datostesting, testing);
         }
     }
     @SuppressWarnings({"rawtypes", "deprecation", "unchecked"})
-    public Instance addInstance(int[ ] arr, String clase, Instances data){
+    private Instance addInstance(int[ ] arr, String clase, Instances data){
         Instance instance = new DenseInstance(arr.length+1);
-        String[] alphabetMinuscula = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n","ene", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
-        String[] alphabetMayuscula = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N","ENE" , "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+        String[] alphabetMinuscula = { "ami", "bmi", "cmi", "dmi", "emi", "fmi", "gmi", "hmi", "imi", "jmi", "kmi", "lmi", "mmi", "nmi","nnmi", "omi", "pmi", "qmi", "rmi", "smi", "tmi", "umi", "vmi", "wmi", "xmi", "ymi", "zmi"};
+        String[] alphabetMayuscula = {"Ama", "Bma", "Cma", "Dma", "Ema", "Fma", "Gma", "Hma", "Ima", "Jma", "Kma", "Lma", "Mma", "Nma","NNma" , "Oma", "Pma", "Qma", "Rma", "Sma", "Tma", "Uma", "Vma", "Wma", "Xma", "Yma", "Zma"};
         String[] numeros = {"0","1","2","3","4","5","6","7","8","9"};
         FastVector Clase = new FastVector(alphabetMayuscula.length+alphabetMinuscula.length+numeros.length);
 
@@ -78,7 +109,7 @@ public class Entrenador {
     }
 
     @SuppressWarnings({"rawtypes", "deprecation", "unchecked"})
-    public static FastVector generarArchivoWeka(int[] arreglo){
+    private static FastVector generarArchivoWeka(int[] arreglo, String path){
         FastVector attributes = new FastVector(arreglo.length);
         FastVector attr= new FastVector();
         Attribute pixeles;
@@ -90,22 +121,21 @@ public class Entrenador {
             attr.add(pixeles);
         }
 
-        String[] alphabetMinuscula = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n","nn", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
-        String[] alphabetMayuscula = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N","NN" , "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
-
-        FastVector clase = new FastVector(alphabetMayuscula.length+alphabetMinuscula.length);
+        String[] alphabetMinuscula = { "ami", "bmi", "cmi", "dmi", "emi", "fmi", "gmi", "hmi", "imi", "jmi", "kmi", "lmi", "mmi", "nmi","nnmi", "omi", "pmi", "qmi", "rmi", "smi", "tmi", "umi", "vmi", "wmi", "xmi", "ymi", "zmi"};
+        String[] alphabetMayuscula = {"Ama", "Bma", "Cma", "Dma", "Ema", "Fma", "Gma", "Hma", "Ima", "Jma", "Kma", "Lma", "Mma", "Nma","NNma" , "Oma", "Pma", "Qma", "Rma", "Sma", "Tma", "Uma", "Vma", "Wma", "Xma", "Yma", "Zma"};
+        String[] numeros = {"0","1","2","3","4","5","6","7","8","9"};
+        FastVector clase = new FastVector(alphabetMayuscula.length+alphabetMinuscula.length+numeros.length);
         clase.appendElements(Arrays.asList(alphabetMayuscula));
         clase.appendElements(Arrays.asList(alphabetMinuscula));
+        clase.appendElements(Arrays.asList(numeros));
         Attribute ClassAtribute = new Attribute("class", clase);
-
         attr.add(ClassAtribute);
 
-        Instances datos = new Instances("Objeto de Instancias", attr, 0);
+        Instances datos = new Instances("test", attr, 0);
 
         System.out.println(datos.attribute(0));
-
         try{
-            PrintWriter writer = new PrintWriter(training);
+            PrintWriter writer = new PrintWriter(path);
             writer.println(datos);
             writer.close();
         } catch (IOException e){
@@ -115,15 +145,17 @@ public class Entrenador {
         return attr;
     }
 
-    public int[] getBinaryFromImage(File imageFile)
+    private int[] getBinaryFromImage(File imageFile)
     {
         BufferedImage img = null;
         try {
             img = ImageIO.read(imageFile);
         } catch (IOException e) {
-
+            e.printStackTrace();
         }
         img = resize(img,60,60);
+        img = toGray(img);
+        img = binarize(img);
 
         byte[][] pixels = new byte[img.getWidth()][];
         int[] second = new int[img.getWidth()*img.getHeight()];
@@ -140,10 +172,131 @@ public class Entrenador {
         second = byteArrayToIntArray(pixels, img.getWidth(), img.getHeight());
         return second;
     }
+    private static BufferedImage binarize(BufferedImage original) {
+        int red;
+        int newPixel;
 
-    public void saveArchivoWeka(Instances datos){
+        int threshold = otsuTreshold(original);
+
+        BufferedImage binarized = new BufferedImage(original.getWidth(), original.getHeight(), original.getType());
+
+        for(int i=0; i<original.getWidth(); i++) {
+            for(int j=0; j<original.getHeight(); j++) {
+
+                // Get pixels
+                red = new Color(original.getRGB(i, j)).getRed();
+                int alpha = new Color(original.getRGB(i, j)).getAlpha();
+                if(red > threshold) {
+                    newPixel = 255;
+                }
+                else {
+                    newPixel = 0;
+                }
+                newPixel = colorToRGB(alpha, newPixel, newPixel, newPixel);
+                binarized.setRGB(i, j, newPixel);
+
+            }
+        }
+
+        return binarized;
+    }
+    private static int[] imageHistogram(BufferedImage input) {
+
+        int[] histogram = new int[256];
+
+        for(int i=0; i<histogram.length; i++) histogram[i] = 0;
+
+        for(int i=0; i<input.getWidth(); i++) {
+            for(int j=0; j<input.getHeight(); j++) {
+                int red = new Color(input.getRGB (i, j)).getRed();
+                histogram[red]++;
+            }
+        }
+
+        return histogram;
+
+    }
+    private static int otsuTreshold(BufferedImage original) {
+
+        int[] histogram = imageHistogram(original);
+        int total = original.getHeight() * original.getWidth();
+
+        float sum = 0;
+        for(int i=0; i<256; i++) sum += i * histogram[i];
+
+        float sumB = 0;
+        int wB = 0,wF;
+
+        float varMax = 0;
+        int threshold = 0;
+
+        for(int i=0 ; i<256 ; i++) {
+            wB += histogram[i];
+            if(wB == 0) continue;
+            wF = total - wB;
+
+            if(wF == 0) break;
+
+            sumB += (float) (i * histogram[i]);
+            float mB = sumB / wB;
+            float mF = (sum - sumB) / wF;
+
+            float varBetween = (float) wB * (float) wF * (mB - mF) * (mB - mF);
+
+            if(varBetween > varMax) {
+                varMax = varBetween;
+                threshold = i;
+            }
+        }
+
+        return threshold;
+
+    }
+    private static int colorToRGB(int alpha, int red, int green, int blue) {
+        int newPixel = 0;
+        newPixel += alpha;
+        newPixel = newPixel << 8;
+        newPixel += red;
+        newPixel = newPixel << 8;
+        newPixel += green;
+        newPixel = newPixel << 8;
+        newPixel += blue;
+
+        return newPixel;
+    }
+    private static BufferedImage toGray(BufferedImage original) {
+
+        int alpha, red, green, blue;
+        int newPixel;
+
+        BufferedImage lum = new BufferedImage(original.getWidth(), original.getHeight(), original.getType());
+
+        for(int i=0; i<original.getWidth(); i++) {
+            for(int j=0; j<original.getHeight(); j++) {
+
+                // Get pixels by R, G, B
+                alpha = new Color(original.getRGB(i, j)).getAlpha();
+                red = new Color(original.getRGB(i, j)).getRed();
+                green = new Color(original.getRGB(i, j)).getGreen();
+                blue = new Color(original.getRGB(i, j)).getBlue();
+
+                red = (int) (0.21 * red + 0.71 * green + 0.07 * blue);
+                // Return back to original format
+                newPixel = colorToRGB(alpha, red, red, red);
+
+                // Write pixels into image
+                lum.setRGB(i, j, newPixel);
+
+            }
+        }
+
+        return lum;
+
+    }
+
+    private void saveArchivoWeka(Instances datos, String path){
         try{
-            PrintWriter writer = new PrintWriter(training, "UTF-8");
+            PrintWriter writer = new PrintWriter(path, "UTF-8");
             writer.println(datos);
             writer.close();
         }catch(IOException e){
@@ -151,7 +304,7 @@ public class Entrenador {
         }
     }
 
-    public int[] byteArrayToIntArray(byte[][] matrizBytes, int ancho, int altura){
+    private int[] byteArrayToIntArray(byte[][] matrizBytes, int ancho, int altura){
         int[] arrEnteros = new int[altura*ancho];
         for(int i=0;i<ancho; i++){
             for(int j=0; j<altura; j++){
@@ -160,7 +313,7 @@ public class Entrenador {
         }
         return arrEnteros;
     }
-    public Instances cargarArchivoWeka(String path, int n){
+    private Instances cargarArchivoWeka(String path, int n){
         Instances data = null;
         try{
                 BufferedReader bf = new BufferedReader(new FileReader(path));
@@ -177,26 +330,31 @@ public class Entrenador {
         return data;
     }
 
-    public String getClass(File f){
+    private String getClass(File f){
         //TODO: Modificar para que coja numeros, un algoritmo diferente de captar la clase es necesario también.
+
         String clase;
         System.out.println(f.getName());
+        clase = f.getName().substring(0,1);
+        if(f.getName().substring(0, 2).equalsIgnoreCase("nn")){
+            char maomi = f.getName().charAt(3);
+            if(maomi=='a'){
+                clase = "NNma";
+            }else {
+                clase = "nnmi";
+            }
+        }
+        else if((clase.charAt(0)>='a' && clase.charAt(0)<='z') || (clase.charAt(0)>='A' && clase.charAt(0)<='Z')){
+            char maomi = f.getName().charAt(2);
+            if(maomi=='a'){
+                clase = clase.toUpperCase();
+                clase = clase + "ma";
+            }else{
+                clase = clase + "mi";
+            }
+        }
 
-        if(f.getName().substring(0, 3 ).equals("NN") )
-        {
-            clase = "NN";
-            System.out.println(clase);
-        }
-        else if(f.getName().substring(0, 3).equals("nn") )
-        {
-            clase = "nn";
-            System.out.println(clase);
-        }
-        else
-        {
-            clase = f.getName().substring(0,1);
-            System.out.println(clase);
-        }
         return clase;
     }
+
 }
