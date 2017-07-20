@@ -4,6 +4,9 @@
 public class Main {
     public static void main(String[] args)
     {
-        Entrenador entrenador = new Entrenador();
+       // Entrenador entrenador = new Entrenador();
+        ProgramaPrinicipal pp = new ProgramaPrinicipal();
+        pp.main();
+
     }
 }
