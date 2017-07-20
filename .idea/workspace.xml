@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9bba85a-baec-4ea1-9952-023561f0618e" name="Default" comment="*Uff, que no ha cambiado estimado Bryan&#10;*Pues te cuento que a partir de esta version dejamos de trabajar con paths especificos, lease, ya no hay que modificar el codigo para poder ejecutar.&#10;*esta nueva version del proyecto coge fotografías desde el mismo proyecto, las de entrenamiento en el folder entrenamiento y las de prueba en el folder pruebas.&#10;*modifique algo ahi en una funcion, creo que eventualmente habra que modificar todo, le puse lo del path para que este bien bla bla bla.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WekaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/Entrenador.class" afterPath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/Entrenador.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/ProgramaPrinicipal$1.class" afterPath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/ProgramaPrinicipal$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/ProgramaPrinicipal.class" afterPath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/ProgramaPrinicipal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entrenador.java" afterPath="$PROJECT_DIR$/src/Entrenador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProgramaPrinicipal.java" afterPath="$PROJECT_DIR$/src/ProgramaPrinicipal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing/test.arff" afterPath="$PROJECT_DIR$/testing/test.arff" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WekaTest.java" afterPath="" />
     </list>
     <ignored path="ProyectoFinalMineria.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,22 +50,9 @@
       <file leaf-file-name="ProgramaPrinicipal.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ProgramaPrinicipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="15">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WekaTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WekaTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#1712#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -737,7 +717,7 @@
       <workItem from="1500566849117" duration="15000" />
       <workItem from="1500568014320" duration="632000" />
       <workItem from="1500575079922" duration="5875000" />
-      <workItem from="1500582288976" duration="139000" />
+      <workItem from="1500582288976" duration="188000" />
     </task>
     <task id="LOCAL-00001" summary="*Uff, que no ha cambiado estimado Bryan&#10;*Pues te cuento que a partir de esta version dejamos de trabajar con paths especificos, lease, ya no hay que modificar el codigo para poder ejecutar.&#10;*esta nueva version del proyecto coge fotografías desde el mismo proyecto, las de entrenamiento en el folder entrenamiento y las de prueba en el folder pruebas.&#10;*modifique algo ahi en una funcion, creo que eventualmente habra que modificar todo, le puse lo del path para que este bien bla bla bla.">
       <created>1500514177234</created>
@@ -750,7 +730,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40592000" />
+    <option name="totallyTimeSpent" value="40641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
@@ -866,10 +846,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#1712#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,10 +1029,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#1712#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,8 +1060,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProgramaPrinicipal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        <state relative-caret-position="15">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
