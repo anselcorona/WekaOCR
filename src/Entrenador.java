@@ -16,8 +16,8 @@ public class Entrenador {
     private static String training =  "training/train.arff";
     private static String testing = "testing/test.arff";
     public Entrenador(){
-        //entrenamiento();
-        pruebas();
+        entrenamiento();
+        //pruebas();
     }
 
     private static BufferedImage resize(BufferedImage img, int newW, int newH) {

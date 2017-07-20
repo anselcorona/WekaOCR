@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b9bba85a-baec-4ea1-9952-023561f0618e" name="Default" comment="*Uff, que no ha cambiado estimado Bryan&#10;*Pues te cuento que a partir de esta version dejamos de trabajar con paths especificos, lease, ya no hay que modificar el codigo para poder ejecutar.&#10;*esta nueva version del proyecto coge fotografías desde el mismo proyecto, las de entrenamiento en el folder entrenamiento y las de prueba en el folder pruebas.&#10;*modifique algo ahi en una funcion, creo que eventualmente habra que modificar todo, le puse lo del path para que este bien bla bla bla.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/Entrenador.class" afterPath="$PROJECT_DIR$/out/production/ProyectoFinalMineria/Entrenador.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebas/8-1.png" afterPath="$PROJECT_DIR$/pruebas/8-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebas/Amayus-1.png" afterPath="$PROJECT_DIR$/pruebas/Amayus-1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entrenador.java" afterPath="$PROJECT_DIR$/src/Entrenador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing/test.arff" afterPath="$PROJECT_DIR$/testing/test.arff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/train.arff" afterPath="$PROJECT_DIR$/training/train.arff" />
     </list>
     <ignored path="ProyectoFinalMineria.iws" />
@@ -35,9 +32,11 @@
         <entry file="file://$PROJECT_DIR$/src/Entrenador.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3217#3276#0" expanded="true" />
+                <element signature="e#4448#4507#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,9 +109,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -165,6 +161,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -644,6 +643,9 @@
       <workItem from="1500524777109" duration="623000" />
       <workItem from="1500526785593" duration="412000" />
       <workItem from="1500528391263" duration="184000" />
+      <workItem from="1500553006542" duration="3000" />
+      <workItem from="1500566849117" duration="15000" />
+      <workItem from="1500568014320" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="*Uff, que no ha cambiado estimado Bryan&#10;*Pues te cuento que a partir de esta version dejamos de trabajar con paths especificos, lease, ya no hay que modificar el codigo para poder ejecutar.&#10;*esta nueva version del proyecto coge fotografías desde el mismo proyecto, las de entrenamiento en el folder entrenamiento y las de prueba en el folder pruebas.&#10;*modifique algo ahi en una funcion, creo que eventualmente habra que modificar todo, le puse lo del path para que este bien bla bla bla.">
       <created>1500514177234</created>
@@ -656,7 +658,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33928000" />
+    <option name="totallyTimeSpent" value="34578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -719,6 +721,20 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3217#3276#0" expanded="true" />
+            <element signature="e#4448#4507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entrenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3217#3276#0" expanded="true" />
+            <element signature="e#4448#4507#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -729,6 +745,8 @@
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3217#3276#0" expanded="true" />
+            <element signature="e#4448#4507#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -739,6 +757,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3217#3276#0" expanded="true" />
+            <element signature="e#4448#4507#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,6 +769,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3217#3276#0" expanded="true" />
+            <element signature="e#4448#4507#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -759,6 +781,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3217#3276#0" expanded="true" />
+            <element signature="e#4448#4507#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -769,6 +793,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3217#3276#0" expanded="true" />
+            <element signature="e#4448#4507#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -777,9 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#169#170#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,9 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#169#170#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -866,9 +886,11 @@
     <entry file="file://$PROJECT_DIR$/src/Entrenador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3217#3276#0" expanded="true" />
+            <element signature="e#4448#4507#0" expanded="true" />
           </folding>
         </state>
       </provider>
