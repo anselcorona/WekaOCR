@@ -1,3 +1,5 @@
+import weka.classifiers.Classifier;
+import weka.classifiers.functions.SMO;
 import weka.core.FastVector;
 
 import javax.imageio.ImageIO;
@@ -9,17 +11,18 @@ import java.util.Arrays;
 
 import weka.core.*;
 import weka.core.converters.ArffLoader;
+import weka.core.converters.ConverterUtils;
 
 public class Entrenador {
     private Instances datostraining = null;
     private Instances datostesting = null;
     private static String training =  "training/train.arff";
     private static String testing = "testing/test.arff";
+    Classifier cls=null;
     public Entrenador(){
         entrenamiento();
         //pruebas();
     }
-
     private static BufferedImage resize(BufferedImage img, int newW, int newH) {
         Image tmp = img.getScaledInstance(newW, newH, Image.SCALE_SMOOTH);
         BufferedImage dimg = new BufferedImage(newW, newH, BufferedImage.TYPE_INT_ARGB);
@@ -29,6 +32,7 @@ public class Entrenador {
         g2d.dispose();
         return dimg;
     }
+
 
     private void entrenamiento(){
         File dir = new File("entrenamiento");
@@ -58,6 +62,7 @@ public class Entrenador {
             saveArchivoWeka(datostraining, training);
         }
     }
+
     private void pruebas(){
         File dir = new File("pruebas");
         File[] directoryListing = dir.listFiles();
@@ -145,6 +150,15 @@ public class Entrenador {
         return attr;
     }
 
+    private void saveArchivoWeka(Instances datos, String path){
+        try{
+            PrintWriter writer = new PrintWriter(path, "UTF-8");
+            writer.println(datos);
+            writer.close();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
     private int[] getBinaryFromImage(File imageFile)
     {
         BufferedImage img = null;
@@ -292,16 +306,6 @@ public class Entrenador {
 
         return lum;
 
-    }
-
-    private void saveArchivoWeka(Instances datos, String path){
-        try{
-            PrintWriter writer = new PrintWriter(path, "UTF-8");
-            writer.println(datos);
-            writer.close();
-        }catch(IOException e){
-            e.printStackTrace();
-        }
     }
 
     private int[] byteArrayToIntArray(byte[][] matrizBytes, int ancho, int altura){
